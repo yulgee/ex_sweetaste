@@ -1,0 +1,62 @@
+.p {
+    &-content {
+        margin-top: 5rem;
+
+        @include rwd($sm) {
+            margin-top: 0;
+        }
+
+        &__nav {
+            list-style-type: none;
+            text-align: center;
+            border: 0.7px solid $primary-lighten;
+            font-size: 1.2rem;
+            color: $primary-darken;
+
+            &__title {
+                background-color: $primary-darken;
+                color: $white;
+            }
+
+            li {
+                border-bottom: 0.7px solid $primary-lighten;
+                padding: 16px 0;
+                @include transition;
+
+                @include hover-focus-active {
+                    background-color: $primary-lighten;
+                }
+
+                a {
+                    color: inherit;
+                    display: block;
+
+                    @include hover-focus-active {
+                        text-decoration: none;
+                    }
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+
+            &__item {
+
+                &--active {
+                    background-color: $primary-lighten;
+                }
+            }
+        }
+
+        &__item {
+            max-width: 60%;
+
+            @include rwd($sm) {
+                margin-top: 2rem;
+                max-width: 100%;
+                padding: 0;
+            }
+        }
+    }
+}

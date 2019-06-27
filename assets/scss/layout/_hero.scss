@@ -1,5 +1,7 @@
 .l {
     &-hero {
+        position: relative;
+
         a {
             @include hover {
                 color: inherit;
@@ -9,6 +11,19 @@
                     filter: blur(0);
                 }
 
+            }
+        }
+
+        &__sum {
+            position: absolute;
+            width: 8%;
+            right: 4%;
+            top: 10%;
+
+            @include rwd($sm) {
+                width: 14%;
+                right: 1.5rem;
+                top: 1.5rem;
             }
         }
 
