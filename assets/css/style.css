@@ -371,7 +371,7 @@ template {
   display: none;
 }
 
-.navbar {
+.l-navbar {
   position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -386,8 +386,8 @@ template {
   color: #3F5D45;
 }
 
-.navbar > .container,
-.navbar > .container-fluid {
+.l-navbar > .container,
+.l-navbar > .container-fluid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,23 +402,23 @@ template {
 }
 
 @media (max-width: 768px) {
-  .navbar {
+  .l-navbar {
     height: 5rem;
   }
 }
 
-.navbar__toggler {
+.l-navbar__toggler {
   padding: 30px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-.navbar__toggler:hover, .navbar__toggler:focus, .navbar__toggler:active {
+.l-navbar__toggler:hover, .l-navbar__toggler:focus, .l-navbar__toggler:active {
   background-color: #3F5D45;
   color: #fff !important;
 }
 
-.navbar__brand {
+.l-navbar__brand {
   display: block;
   background: url(../img/logo-all-dark.svg) no-repeat 50%;
   width: 219px;
@@ -426,14 +426,14 @@ template {
 }
 
 @media (max-width: 768px) {
-  .navbar__brand {
+  .l-navbar__brand {
     background: url(../img/logotype-lg-dark.svg) no-repeat 50%;
     width: 150px;
     height: 5rem;
   }
 }
 
-.navbar__brand a {
+.l-navbar__brand a {
   background-size: cover;
   width: 219px;
   height: 7rem;
@@ -441,13 +441,13 @@ template {
 }
 
 @media (max-width: 768px) {
-  .navbar__brand a {
+  .l-navbar__brand a {
     width: 150px;
     height: 5rem;
   }
 }
 
-.navbar__menu {
+.l-navbar__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -456,35 +456,125 @@ template {
   list-style: none;
 }
 
-.navbar__menu__items {
+.l-navbar__menu__items {
   padding: 0 30px;
   color: #8DA291;
 }
 
-.navbar__menu__items a {
+.l-navbar__menu__items a {
   color: inherit;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-.navbar__menu__items a:hover, .navbar__menu__items a:focus, .navbar__menu__items a:active {
+.l-navbar__menu__items a:hover, .l-navbar__menu__items a:focus, .l-navbar__menu__items a:active {
   color: #3F5D45;
   text-decoration: none;
 }
 
-.navbar__menu__items--active a {
+.l-navbar__menu__items--active a {
   color: #3F5D45;
 }
 
-.navbar__cart {
+.l-navbar__cart {
   color: #3F5D45;
   padding: 0 30px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-.navbar__cart:hover, .navbar__cart:focus, .navbar__cart:active {
+.l-navbar__cart:hover, .l-navbar__cart:focus, .l-navbar__cart:active {
   color: #8DA291;
+}
+
+.l-hero a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.l-hero a:hover .l-hero__item__bkg {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+
+.l-hero__img {
+  width: 100%;
+  height: 500px;
+  margin-bottom: -4rem;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .l-hero__img {
+    height: 277px;
+    margin-bottom: 0;
+  }
+}
+
+.l-hero__item {
+  position: relative;
+  max-width: 260px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333333%;
+          flex: 0 0 33.333333%;
+  height: 256px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 0.7px solid #fff;
+  overflow: hidden;
+}
+
+.l-hero__item:last-child {
+  border-right: none;
+}
+
+.l-hero__item__bkg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.l-hero__item__mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(63, 93, 69, 0.8);
+}
+
+.l-hero__item__mask--active {
+  background-color: rgba(255, 225, 128, 0.8);
+}
+
+.l-hero__item__text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 0.3rem;
+  z-index: 2;
+}
+
+.l-hero__item__text--active {
+  color: #3F5D45;
 }
 
 .l-register {

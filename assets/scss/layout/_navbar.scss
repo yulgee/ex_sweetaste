@@ -1,99 +1,101 @@
-.navbar {
-    position: relative;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    overflow: hidden;
-
-    color: $primary-darken;
-
-    >.container,
-    >.container-fluid {
-        display: flex;
+.l {
+    &-navbar {
+        position: relative;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-    }
+        width: 100%;
+        overflow: hidden;
 
-    @include rwd($md) {
-        height: 5rem;
-    }
+        color: $primary-darken;
 
-
-    &__toggler {
-        padding: 30px;
-        @include transition;
-
-        @include hover-focus-active {
-            background-color: $primary-darken;
-            color: $white !important;
+        >.container,
+        >.container-fluid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
         }
-    }
-
-
-    &__brand {
-        display: block;
-        background: url(../img/logo-all-dark.svg) no-repeat 50%;
-        width: 219px;
-        height: 7rem;
 
         @include rwd($md) {
-            background: url(../img/logotype-lg-dark.svg) no-repeat 50%;
-            width: 150px;
             height: 5rem;
         }
 
-        a {
-            background-size: cover;
+
+        &__toggler {
+            padding: 30px;
+            @include transition;
+
+            @include hover-focus-active {
+                background-color: $primary-darken;
+                color: $white !important;
+            }
+        }
+
+
+        &__brand {
+            display: block;
+            background: url(../img/logo-all-dark.svg) no-repeat 50%;
             width: 219px;
             height: 7rem;
-            display: block;
 
             @include rwd($md) {
+                background: url(../img/logotype-lg-dark.svg) no-repeat 50%;
                 width: 150px;
                 height: 5rem;
             }
-        }
-    }
-
-    &__menu {
-        display: flex;
-        padding-left: 0;
-        margin: 0;
-        list-style: none;
-
-        &__items {
-            padding: 0 30px;
-            color: $primary;
 
             a {
-                color: inherit;
-                @include transition;
+                background-size: cover;
+                width: 219px;
+                height: 7rem;
+                display: block;
 
-                @include hover-focus-active {
-                    color: $primary-darken;
-                    text-decoration: none;
+                @include rwd($md) {
+                    width: 150px;
+                    height: 5rem;
                 }
             }
+        }
 
-            &--active {
+        &__menu {
+            display: flex;
+            padding-left: 0;
+            margin: 0;
+            list-style: none;
+
+            &__items {
+                padding: 0 30px;
+                color: $primary;
+
                 a {
-                    color: $primary-darken;
+                    color: inherit;
+                    @include transition;
+
+                    @include hover-focus-active {
+                        color: $primary-darken;
+                        text-decoration: none;
+                    }
                 }
+
+                &--active {
+                    a {
+                        color: $primary-darken;
+                    }
+                }
+
             }
-
         }
-    }
 
-    &__cart {
-        color: $primary-darken;
-        padding: 0 30px;
-        @include transition;
+        &__cart {
+            color: $primary-darken;
+            padding: 0 30px;
+            @include transition;
 
-        @include hover-focus-active {
-            color: $primary;
+            @include hover-focus-active {
+                color: $primary;
+            }
         }
-    }
 
+    }
 }

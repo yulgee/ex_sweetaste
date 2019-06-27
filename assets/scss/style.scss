@@ -8,12 +8,14 @@
 
 // layout
 @import "layout/navbar";
+@import "layout/hero";
 @import "layout/register";
 @import "layout/footer";
 
 // modules
 @import "modules/card";
 @import "modules/form";
+@import "modules/pagination";
 
 // pages
 @import "pages/index";
