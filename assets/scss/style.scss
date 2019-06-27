@@ -3,8 +3,8 @@
 @import "normalize";
 
 // utils
-@import "variable";
-@import "mixin";
+@import "utils/variable";
+@import "utils/mixin";
 
 // layout
 @import "layout/navbar";

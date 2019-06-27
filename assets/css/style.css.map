@@ -4,8 +4,8 @@
     "sources": [
         "../scss/style.scss",
         "../scss/_normalize.scss",
-        "../scss/_variable.scss",
-        "../scss/_mixin.scss",
+        "../scss/utils/_variable.scss",
+        "../scss/utils/_mixin.scss",
         "../scss/layout/_navbar.scss",
         "../scss/layout/_hero.scss",
         "../scss/layout/_register.scss",
