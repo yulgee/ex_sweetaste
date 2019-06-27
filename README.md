@@ -1,4 +1,4 @@
-# 六角 - SASS & CSS 結構練習 
+# Hex School - Sweetaste 甜點電商 
 
 ## 位置
 
