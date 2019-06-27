@@ -1,0 +1,44 @@
+.l {
+
+    &-footer {
+        padding: 40px 0;
+        color: $primary-darken;
+        background-color: $primary-lighten;
+
+        &__logo {
+            background-image: url(../img/logotype-lg-dark.svg);
+            background-repeat: no-repeat;
+            max-width: 170px;
+            height: 27px;
+        }
+
+        &__contact {
+            a {
+                color: inherit;
+                @include transition;
+
+                @include hover-focus-active {
+                    color: $primary;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &__summ {
+            background-image: url(../img/sm-今天是個吃甜點的好日子.svg);
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 218px;
+            margin: 0 0 0 auto;
+        }
+
+
+        &__social {
+            a {
+                width: 32px;
+                height: 32px;
+                margin-right: 8px;
+            }
+        }
+    }
+}

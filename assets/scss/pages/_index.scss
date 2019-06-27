@@ -1,0 +1,158 @@
+.p {
+    &-hero {
+        a {
+            @include hover {
+                color: inherit;
+                text-decoration: none;
+
+                & .p-hero__item__bkg {
+                    filter: blur(0);
+                }
+
+            }
+        }
+
+        &__img {
+            width: 100%;
+            height: 500px;
+            margin-bottom: -4rem;
+            @include bg-cover;
+
+            @include rwd($md) {
+                height: 277px;
+                margin-bottom: 0;
+            }
+        }
+
+        &__item {
+            position: relative;
+            max-width: 260px;
+            flex: 0 0 33.333333%;
+            height: 256px;
+            writing-mode: vertical-rl;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 0.7px solid $white;
+            overflow: hidden;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            &__bkg {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                filter: blur(5px);
+
+                @include bg-cover;
+                @include transition;
+            }
+
+            &__mask {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                background-color: rgba($primary-darken, 0.8);
+                ;
+
+                &--active {
+                    background-color: rgba($secondary, 0.8);
+                }
+
+            }
+
+
+            &__text {
+                font-size: 1.5rem;
+                font-weight: 300;
+                color: $white;
+                letter-spacing: 0.3rem;
+                z-index: 2;
+
+                &--active {
+                    color: $primary-darken;
+                }
+            }
+        }
+    }
+
+    &-about {
+        background-color: $primary-lighten;
+        margin-top: 13rem;
+
+        @include rwd ($md) {
+            margin: 3rem 0;
+        }
+
+        &__title {
+            position: relative;
+            top: -3rem;
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 110px;
+
+            &-mobile {
+                max-width: 50%;
+
+                margin: 3rem auto;
+            }
+        }
+
+        &__img {
+            position: relative;
+            margin-top: -20px;
+            margin-bottom: -20px;
+            height: 460px;
+            overflow: hidden;
+
+            &__pic {
+                max-width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            @include rwd($md) {
+                margin: 0;
+                padding: 0 !important;
+                height: 250px;
+            }
+
+        }
+
+        &__txt {
+            writing-mode: vertical-rl;
+            line-height: 2.5rem;
+            color: $primary;
+            padding: 3.5rem 0;
+            max-height: 420px;
+
+            @include rwd($md) {
+                writing-mode: inherit;
+                line-height: 2rem;
+                padding: 2rem 0;
+
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
+    &-quote {
+        margin: 80px 0;
+        height: 328px;
+
+        img {
+            height: 328px;
+        }
+
+
+    }
+
+}
