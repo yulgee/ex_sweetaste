@@ -3,20 +3,23 @@
 @import "normalize";
 
 // utils
-@import "variable";
-@import "mixin";
+@import "utils/variable";
+@import "utils/mixin";
 
 // layout
 @import "layout/navbar";
+@import "layout/hero";
 @import "layout/register";
 @import "layout/footer";
 
 // modules
 @import "modules/card";
-@import "modules/form";
+@import "modules/pagination";
 
 // pages
 @import "pages/index";
+@import "pages/product";
+@import "pages/login";
 
 
 // vendor

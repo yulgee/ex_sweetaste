@@ -1,0 +1,47 @@
+.m {
+    &-page {
+        &__item {
+            width: 3.8rem;
+            height: 3.8rem;
+            line-height: 3.8rem;
+            text-align: center;
+            border: 0.7px solid;
+            border-right: 0;
+            border-color: $primary-lighten;
+            color: $primary-darken;
+            @include transition;
+
+            @include hover-focus-active {
+                background-color: $primary-darken;
+
+                a {
+                    color: white;
+                }
+            }
+
+            a {
+                display: block;
+                color: inherit;
+
+                @include hover-focus-active {
+                    text-decoration: none;
+                }
+            }
+
+            &--active {
+                background-color: $primary-darken;
+                color: $white;
+            }
+
+            &:last-child {
+                border-right: 0.7px solid;
+                border-color: $primary-lighten;
+            }
+
+            .material-icons {
+                line-height: inherit;
+            }
+        }
+
+    }
+}
