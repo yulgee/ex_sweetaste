@@ -1,6 +1,9 @@
 # Hex School - Sweetaste 甜點電商 
 
 ## 位置
+  * 設計稿：https://xd.adobe.com/spec/934efdb7-a7e4-47d5-572e-efece0914f62-e57f/?fbclid=IwAR15lAT2r2eWLq7Sb4dkeLqhpvmDbBjMcMc1bzbEmflgVjKqYx6ja81Lxis
+  * 網站：https://yulgee.github.io/ex_sweetaste.github.io/
+  * 原始碼：https://github.com/yulgee/ex_sweetaste.github.io
 
 ## 命名規範
   * 前綴  
