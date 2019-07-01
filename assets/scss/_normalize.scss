@@ -418,3 +418,12 @@ template {
 [hidden] {
   display: none;
 }
+
+
+/**
+*list-style-clear
+*/
+ul {
+  list-style-type: none;
+  padding: 0;
+}

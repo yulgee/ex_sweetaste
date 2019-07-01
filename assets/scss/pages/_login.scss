@@ -1,4 +1,17 @@
 .p {
+    &-title {
+        padding-top: 1.5rem;
+        font-size: $font-lg;
+        color: $primary-lighten;
+    }
+
+    &-subtitle {
+        padding-top: 1.5rem;
+        font-size: $font-md;
+        color: $primary;
+        font-weight: 300;
+    }
+
     &-login {
         position: relative;
         width: 390px;
@@ -16,60 +29,9 @@
 
         &__submit {
             width: 100%;
-            font-size: 1.5rem;
+            font-size: $font-md;
             height: auto;
             padding: 1rem;
-        }
-
-        &__check {
-            color: $primary-lighten;
-            font-weight: 300;
-
-            input[type="checkbox"] {
-                display: none;
-
-                +label {
-                    display: inline;
-                    position: relative;
-
-                    &::before {
-                        display: inline-block;
-                        width: 1rem;
-                        height: 1rem;
-                        content: ' ';
-                        background-color: $primary-lighten;
-                        vertical-align: middle;
-                        margin-right: 0.5rem;
-                        cursor: pointer;
-                        position: relative;
-                        top: -2px;
-                        z-index: 10;
-                    }
-                }
-
-                &:checked+label {
-                    &::before {
-                        background-color: $secondary;
-                    }
-
-                    // Checkmark
-                    &::after {
-                        width: 6px;
-                        height: 13px;
-                        border: 3px solid $primary-darken;
-                        border-left: none;
-                        border-top: none;
-                        content: ' ';
-                        position: absolute;
-                        left: 6px;
-                        bottom: 4px;
-                        transform: rotatez(45deg);
-                        cursor: pointer;
-                        z-index: 20;
-                    }
-                }
-
-            }
         }
     }
 
@@ -78,6 +40,28 @@
         width: 390px;
         margin: 1rem 0;
         background-color: $primary-lighten;
+
+        @include rwd($md) {
+            margin: 0;
+        }
+
+        &__list {
+            padding: 0 1.5rem;
+        }
+
+        &__item {
+            background-color: $white;
+            height: 3.5rem;
+            padding: 1rem;
+
+            @include rwd($md) {
+                border: 0.8px solid $primary-lighten;
+            }
+
+            img {
+                max-height: 100%;
+            }
+        }
     }
 
 }
