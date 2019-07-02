@@ -18,6 +18,7 @@ $gray-900: #212529 !default;
 $black: #000 !default;
 
 //font size
+$font-sm: 1.25rem;
 $font-md: 1.5rem;
 $font-lg: 2rem;
 
@@ -27,3 +28,22 @@ $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
+
+
+// background color
+.bg-lighten {
+    background-color: $primary-lighten;
+}
+
+.bg-darken {
+    background-color: $primary-darken;
+}
+
+// font color
+.text-lighten {
+    color: $primary-lighten;
+}
+
+.text-darkem {
+    color: $primary-darken;
+}
