@@ -3,6 +3,16 @@
         color: $primary-darken;
         margin-bottom: 2.5rem;
 
+        .l-register__form__submit {
+            font-size: $font-md;
+            font-weight: 700;
+            height: 4rem;
+        }
+
+        @include rwd($md) {
+            margin-bottom: -3rem;
+        }
+
         &__title {
             background-color: $primary-lighten;
             font-size: $font-md;
@@ -92,14 +102,38 @@
                 }
             }
 
+            &__table {
+                color: $primary;
+                font-weight: 300;
+
+                @include rwd($md) {
+                    color: $primary-darken;
+                }
+            }
+
             &__result {
-                margin-top: 1rem;
-                border-top: 0.8px solid $primary-lighten;
+                color: $primary-lighten;
                 font-size: 1.25rem;
                 font-weight: 700;
+
+                @include rwd($md) {
+                    color: $primary-darken;
+                }
+
+                td {
+                    padding-top: 1rem;
+                }
             }
+
+
 
         }
     }
 
+}
+
+.no-hover {
+    @include hover-focus-active {
+        background-color: inherit;
+    }
 }

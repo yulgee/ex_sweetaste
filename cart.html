@@ -69,9 +69,10 @@
                                     <div class="m-page__item">
                                         <a href="#" class="m__page__link">-</a>
                                     </div>
-                                    <div class="m-page__item">
-                                        <a href="#" class="m__page__link">2</a>
+                                    <div class="m-page__item no-hover">
+                                        <input type="text" class="m__page__link" placeholder="2">
                                     </div>
+
                                     <div class="m-page__item">
                                         <a href="#" class="m__page__link">+</a>
                                     </div>
@@ -81,7 +82,7 @@
                         <div class="p-cart__item__price">
                             NT$ 900
                         </div>
-                        <a href="#" class="p-cart__item__delete d-none d-md-block ml-4">
+                        <a href="#" class="p-cart__item__delete d-none d-md-block mx-4">
                             <i class="material-icons">
                                 delete_outline
                             </i>
@@ -103,8 +104,8 @@
                                     <div class="m-page__item">
                                         <a href="#" class="m__page__link">-</a>
                                     </div>
-                                    <div class="m-page__item">
-                                        <a href="#" class="m__page__link">2</a>
+                                    <div class="m-page__item no-hover">
+                                        <input type="text" class="m__page__link" placeholder="2">
                                     </div>
                                     <div class="m-page__item">
                                         <a href="#" class="m__page__link">+</a>
@@ -115,7 +116,7 @@
                         <div class="p-cart__item__price">
                             NT$ 900
                         </div>
-                        <a href="#" class="p-cart__item__delete d-none d-md-block ml-4">
+                        <a href="#" class="p-cart__item__delete d-none d-md-block mx-4">
                             <i class="material-icons">
                                 delete_outline
                             </i>
@@ -137,8 +138,8 @@
                                     <div class="m-page__item">
                                         <a href="#" class="m__page__link">-</a>
                                     </div>
-                                    <div class="m-page__item">
-                                        <a href="#" class="m__page__link">2</a>
+                                    <div class="m-page__item no-hover">
+                                        <input type="text" class="m__page__link" placeholder="2">
                                     </div>
                                     <div class="m-page__item">
                                         <a href="#" class="m__page__link">+</a>
@@ -149,7 +150,7 @@
                         <div class="p-cart__item__price">
                             NT$ 900
                         </div>
-                        <a href="#" class="p-cart__item__delete d-none d-md-block ml-4">
+                        <a href="#" class="p-cart__item__delete d-none d-md-block mx-4">
                             <i class="material-icons">
                                 delete_outline
                             </i>
@@ -170,8 +171,8 @@
                                     <div class="m-page__item">
                                         <a href="#" class="m__page__link">-</a>
                                     </div>
-                                    <div class="m-page__item">
-                                        <a href="#" class="m__page__link">2</a>
+                                    <div class="m-page__item no-hover">
+                                        <input type="text" class="m__page__link" placeholder="2">
                                     </div>
                                     <div class="m-page__item">
                                         <a href="#" class="m__page__link">+</a>
@@ -182,7 +183,7 @@
                         <div class="p-cart__item__price">
                             NT$ 900
                         </div>
-                        <a href="#" class="p-cart__item__delete d-none d-md-block ml-4">
+                        <a href="#" class="p-cart__item__delete d-none d-md-block mx-4">
                             <i class="material-icons">
                                 delete_outline
                             </i>
@@ -194,32 +195,53 @@
                 <div class="col-md-4">
                     <div class="p-cart__checkout p-3">
                         <div class="p-cart__title text-center py-3 mb-2">訂單摘要</div>
-                        <table class="table text-light">
+                        <table class="m-table p-cart__checkout__table">
                             <tbody>
                                 <tr>
                                     <td>小計</td>
-                                    <td>NT$ 2,700</td>
+                                    <td class="text-right">NT$ 2,700</td>
                                 </tr>
                                 <tr>
                                     <td>運費</td>
-                                    <td>NT$ 300</td>
+                                    <td class="text-right">NT$ 300</td>
                                 </tr>
                                 <tr class="p-cart__checkout__result">
                                     <td>總計</td>
-                                    <td>NT$ 3,000</td>
+                                    <td class="text-right">NT$ 3,000</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-
-
+                    <button class="p-cart l-register__form__submit w-100" onclick="location.href='checkout.html'">
+                        結帳
+                    </button>
                 </div>
             </div>
         </div>
 
     </div>
 
-
+    <div class="l-register">
+        <div class="container">
+            <div class="row">
+                <div class="l-register__title col-md-6 d-flex align-items-center">
+                    <img src="assets/img/logo-light.svg" alt="logo-light">
+                    <h4>訂閱你我的甜蜜郵件</h4>
+                </div>
+                <form class="l-register__form col-md-6 d-flex justify-content-md-end">
+                    <i class="material-icons">
+                        mail
+                    </i>
+                    <input class="l-register__form__text" type="email">
+                    <button class="l-register__form__submit">
+                        <i class="material-icons">
+                            arrow_forward
+                        </i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
     <footer class="l-footer">
         <div class="container">
             <div class="row">
