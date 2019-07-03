@@ -657,6 +657,15 @@ ul {
   }
 }
 
+.l-register__submit {
+  height: 3.5rem;
+  width: 4rem;
+}
+
+.l-register__submit i {
+  line-height: 2;
+}
+
 .l-register__form__text {
   max-width: 16.75rem;
   width: 100%;
@@ -983,6 +992,19 @@ ul {
 .m-table-sm th,
 .m-table-sm td {
   padding: .3rem;
+}
+
+.e-button {
+  display: inline-block;
+  border: none;
+  background-color: #FFE180;
+  color: #3F5D45;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.e-button:hover, .e-button:focus {
+  background-color: #ffc91a;
 }
 
 .p-hero a:hover {

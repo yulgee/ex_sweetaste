@@ -1,0 +1,13 @@
+.e {
+    &-button {
+        display: inline-block;
+        border: none;
+        background-color: $secondary;
+        color: $primary-darken;
+        @include transition;
+
+        @include hover-focus {
+            background-color: darken($secondary, 20%);
+        }
+    }
+}
