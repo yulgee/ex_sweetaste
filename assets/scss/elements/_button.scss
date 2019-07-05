@@ -9,5 +9,12 @@
         @include hover-focus {
             background-color: darken($secondary, 20%);
         }
+
+        &-text {
+            width: 100%;
+            font-size: 1.5rem;
+            height: auto;
+            padding: 1rem;
+        }
     }
 }

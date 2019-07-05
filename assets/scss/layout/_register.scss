@@ -4,6 +4,10 @@
         padding: 30px 0;
         background-color: $primary-darken;
 
+        @include rwd($md) {
+            margin-top: 0;
+        }
+
         &__title {
             color: $primary-lighten;
 
@@ -62,22 +66,6 @@
                 }
             }
 
-            &__submit {
-                border: none;
-                background-color: $secondary;
-                color: $primary-darken;
-                height: 3.5rem;
-                width: 4rem;
-                @include transition;
-
-                @include hover-focus {
-                    background-color: darken($secondary, 20%);
-                }
-
-                i {
-                    line-height: 2;
-                }
-            }
 
             >i {
                 position: relative;

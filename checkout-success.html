@@ -46,19 +46,41 @@
         </nav>
     </div>
 
-    <div class="wrapper">
+    <div class="p-checkout wrapper">
         <div class="container">
             <div class="l-hero row">
-                <div class="l-hero__img mb-0  d-flex justify-content-center align-items-center"
+                <div class="l-hero__img mb-0 d-flex justify-content-center align-items-center"
                     style="background-image:
                     url(https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c5a2cf31c693f5c15fb08135bf1adf2&auto=format&fit=crop&w=1347&q=80)">
-                    <div class="l-hero__sumgroup col-md-3">
-                        <img src="assets/img/lg-付款成功.svg">
-                        <button class="e-button w-100">
+                    <div class="col-md-3">
+                        <div class="l-hero__sumgroup">
+                            <ul class="e-process d-flex justify-content-between mb-4">
+                                <li class=" e-process-icon">
+                                    <i class="material-icons">
+                                        check
+                                    </i>
+                                </li>
+                                <li class=" e-process-icon">
+                                    <i class="material-icons">
+                                        check
+                                    </i>
+                                </li>
+                                <li class=" e-process-icon">
+                                    <i class="material-icons">
+                                        check
+                                    </i>
+                                </li>
+                            </ul>
+                            <img src="assets/img/lg-付款成功.svg">
+                        </div>
+                        <button class="e-button e-button-text d-none d-md-block" onclick="location.href='product.html'">
                             繼續逛逛
                         </button>
                     </div>
                 </div>
+                <button class="e-button e-button-text d-md-none" onclick="location.href='product.html'">
+                    繼續逛逛
+                </button>
             </div>
         </div>
     </div>

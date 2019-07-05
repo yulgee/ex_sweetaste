@@ -1,0 +1,17 @@
+.p {
+    &-checkout {
+        @include rwd($md) {
+            margin-bottom: -4rem;
+        }
+
+        &__form {
+            width: 29rem
+        }
+
+        .l-hero__img {
+            @include rwd($md) {
+                height: 500px;
+            }
+        }
+    }
+}

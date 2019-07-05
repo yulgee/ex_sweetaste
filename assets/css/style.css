@@ -454,7 +454,7 @@ ul {
 @media (max-width: 768px) {
   .l-navbar__brand {
     background: url(../img/logotype-lg-dark.svg) no-repeat 50%;
-    width: 13.6rem;
+    width: 8.6rem;
     height: 5rem;
   }
 }
@@ -540,6 +540,11 @@ ul {
     right: 1.5rem;
     top: 1.5rem;
   }
+}
+
+.l-hero__sumgroup {
+  width: 12rem;
+  margin: 0 auto 3rem;
 }
 
 .l-hero__img {
@@ -628,6 +633,12 @@ ul {
   background-color: #3F5D45;
 }
 
+@media (max-width: 768px) {
+  .l-register {
+    margin-top: 0;
+  }
+}
+
 .l-register__title {
   color: #EAF0ED;
 }
@@ -699,24 +710,6 @@ ul {
   background-color: #EAF0ED;
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-.l-register__form__submit {
-  border: none;
-  background-color: #FFE180;
-  color: #3F5D45;
-  height: 3.5rem;
-  width: 4rem;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.l-register__form__submit:hover, .l-register__form__submit:focus {
-  background-color: #ffc91a;
-}
-
-.l-register__form__submit i {
-  line-height: 2;
 }
 
 .l-register__form > i {
@@ -853,54 +846,6 @@ ul {
   background-color: #3F5D45;
 }
 
-.m-check {
-  color: #EAF0ED;
-  font-weight: 300;
-}
-
-.m-check input[type="checkbox"] {
-  display: none;
-}
-
-.m-check input[type="checkbox"] + label {
-  display: inline;
-  position: relative;
-}
-
-.m-check input[type="checkbox"] + label::before {
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  content: ' ';
-  background-color: #EAF0ED;
-  vertical-align: middle;
-  margin-right: 0.5rem;
-  cursor: pointer;
-  position: relative;
-  top: -2px;
-  z-index: 10;
-}
-
-.m-check input[type="checkbox"]:checked + label::before {
-  background-color: #FFE180;
-}
-
-.m-check input[type="checkbox"]:checked + label::after {
-  width: 6px;
-  height: 13px;
-  border: 3px solid #3F5D45;
-  border-left: none;
-  border-top: none;
-  content: ' ';
-  position: absolute;
-  left: 6px;
-  bottom: 4px;
-  -webkit-transform: rotatez(45deg);
-          transform: rotatez(45deg);
-  cursor: pointer;
-  z-index: 20;
-}
-
 .m-page__item {
   width: 3.8rem;
   height: 3.8rem;
@@ -994,6 +939,97 @@ ul {
   padding: .3rem;
 }
 
+.m-form {
+  background-color: #3F5D45;
+  padding: 1.8rem 2.5rem;
+}
+
+.m-form__title {
+  font-size: 2rem;
+  color: #EAF0ED;
+}
+
+.m-form__group label {
+  font-size: 1.25rem;
+  color: #EAF0ED;
+}
+
+.m-form__group.col {
+  padding: 0 0.5rem 0 0;
+}
+
+.m-form__group.col:last-child {
+  padding: 0;
+}
+
+.m-form__group select {
+  color: #8DA291;
+}
+
+.m-form__text {
+  max-width: 100%;
+  width: 100%;
+  height: 3.5rem;
+  border: none;
+  border-radius: 0;
+  background-color: #EAF0ED;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.m-form__text option {
+  color: #3F5D45;
+}
+
+.m-form__text::-webkit-input-placeholder {
+  color: #8DA291;
+}
+
+.m-form__text:-ms-input-placeholder {
+  color: #8DA291;
+}
+
+.m-form__text::-ms-input-placeholder {
+  color: #8DA291;
+}
+
+.m-form__text::placeholder {
+  color: #8DA291;
+}
+
+.m-form__text, .m-form__text:hover, .m-form__text:focus {
+  background-color: #EAF0ED;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.m-form__wrapper {
+  position: relative;
+  width: 100%;
+  background-color: #3F5D45;
+}
+
+@media (max-width: 768px) {
+  .m-form__wrapper {
+    width: 100%;
+  }
+}
+
+.m-form__wrapper__title {
+  padding-top: 1.5rem;
+  font-size: 2rem;
+  color: #EAF0ED;
+}
+
+.m-form__wrapper__submit {
+  width: 100%;
+  font-size: 1.5rem;
+  height: auto;
+  padding: 1rem;
+}
+
 .e-button {
   display: inline-block;
   border: none;
@@ -1005,6 +1041,115 @@ ul {
 
 .e-button:hover, .e-button:focus {
   background-color: #ffc91a;
+}
+
+.e-button-text {
+  width: 100%;
+  font-size: 1.5rem;
+  height: auto;
+  padding: 1rem;
+}
+
+.e-process {
+  color: #3F5D45;
+  position: relative;
+}
+
+.e-process::before {
+  content: "";
+  position: absolute;
+  height: 0.8px;
+  width: 90%;
+  top: 50%;
+  background-color: #8DA291;
+  left: 10px;
+}
+
+.e-process-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: #3F5D45;
+  border-radius: 1rem;
+  z-index: 2;
+}
+
+.e-process-icon i {
+  font-size: 1rem;
+  color: #EAF0ED;
+}
+
+.e-process-icon.uncheck {
+  background-color: #3F5D45;
+  border: 0.8px solid #8DA291;
+}
+
+.e-process-icon.check {
+  background-color: #3F5D45;
+  border: 0.8px solid #EAF0ED;
+}
+
+.e-process-icon.check i {
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 1rem;
+}
+
+.e-check {
+  color: #EAF0ED;
+  font-weight: 300;
+}
+
+.e-check input[type="checkbox"] {
+  display: none;
+}
+
+.e-check input[type="checkbox"] + label {
+  display: inline;
+  position: relative;
+}
+
+.e-check input[type="checkbox"] + label::before {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  content: ' ';
+  background-color: #EAF0ED;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  top: -2px;
+  z-index: 10;
+}
+
+.e-check input[type="checkbox"]:checked + label::before {
+  background-color: #FFE180;
+}
+
+.e-check input[type="checkbox"]:checked + label::after {
+  width: 6px;
+  height: 13px;
+  border: 3px solid #3F5D45;
+  border-left: none;
+  border-top: none;
+  content: ' ';
+  position: absolute;
+  left: 6px;
+  bottom: 4px;
+  -webkit-transform: rotatez(45deg);
+          transform: rotatez(45deg);
+  cursor: pointer;
+  z-index: 20;
 }
 
 .p-hero a:hover {
@@ -1259,6 +1404,13 @@ ul {
 .p-login {
   position: relative;
   width: 390px;
+  background-color: #3F5D45;
+}
+
+@media (max-width: 768px) {
+  .p-login {
+    width: 100%;
+  }
 }
 
 .p-login__group {
@@ -1286,6 +1438,7 @@ ul {
 
 @media (max-width: 768px) {
   .p-social {
+    width: 100%;
     margin: 0;
   }
 }
@@ -1457,5 +1610,21 @@ ul {
 
 .no-hover:hover, .no-hover:focus, .no-hover:active {
   background-color: inherit;
+}
+
+@media (max-width: 768px) {
+  .p-checkout {
+    margin-bottom: -4rem;
+  }
+}
+
+.p-checkout__form {
+  width: 29rem;
+}
+
+@media (max-width: 768px) {
+  .p-checkout .l-hero__img {
+    height: 500px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

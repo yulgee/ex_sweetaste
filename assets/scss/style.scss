@@ -13,19 +13,21 @@
 
 // modules
 @import "modules/card";
-@import "modules/checkbox";
 @import "modules/pagination";
 @import "modules/tables";
+@import "modules/form";
 
-//elements
+// elements
 @import "elements/button";
-
+@import "elements/process";
+@import "elements/checkbox";
 
 // pages
 @import "pages/index";
 @import "pages/product";
 @import "pages/login";
-@import "pages/cart"
+@import "pages/cart";
+@import "pages/checkout";
 
 
 // vendor
