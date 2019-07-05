@@ -1,7 +1,6 @@
 // base
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,700,900&display=swap');
 @import "normalize";
-
 // utils
 @import "utils/variable";
 @import "utils/mixin";
@@ -15,11 +14,20 @@
 // modules
 @import "modules/card";
 @import "modules/pagination";
+@import "modules/tables";
+@import "modules/form";
+
+// elements
+@import "elements/button";
+@import "elements/process";
+@import "elements/checkbox";
 
 // pages
 @import "pages/index";
 @import "pages/product";
 @import "pages/login";
+@import "pages/cart";
+@import "pages/checkout";
 
 
 // vendor

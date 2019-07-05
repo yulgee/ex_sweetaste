@@ -36,23 +36,23 @@
         &__brand {
             display: block;
             background: url(../img/logo-all-dark.svg) no-repeat 50%;
-            width: 219px;
+            width: 13.6rem;
             height: 7rem;
 
             @include rwd($md) {
                 background: url(../img/logotype-lg-dark.svg) no-repeat 50%;
-                width: 150px;
+                width: 8.6rem;
                 height: 5rem;
             }
 
             a {
                 background-size: cover;
-                width: 219px;
+                width: 13.6rem;
                 height: 7rem;
                 display: block;
 
                 @include rwd($md) {
-                    width: 150px;
+                    width: 9rem;
                     height: 5rem;
                 }
             }

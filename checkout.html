@@ -46,59 +46,68 @@
         </nav>
     </div>
 
-
     <div class="wrapper">
         <div class="container">
-            <div class="row justify-content-center mt-2">
-                <div class="p-login">
-                    <div class="p-title text-center mb-4">會員登入</div>
-                    <div class="p-login__group">
-                        <form class="l-register__form d-flex mb-3">
-                            <i class="material-icons">
-                                person
-                            </i>
-                            <input class="l-register__form__text mw-100" type="email" placeholder="電子信箱 / 手機號碼">
-                        </form>
-                        <form class="l-register__form d-flex mb-3">
-                            <i class="material-icons">
-                                vpn_key
-                            </i>
-                            <input class="l-register__form__text mw-100" type="password" placeholder="請輸入使用者密碼">
-                        </form>
-                        <div class="e-check mb-4">
-                            <input id="checkbox" type="checkbox">
-                            <label for="checkbox">記住我</label>
+            <div class="row">
+                <div class="p-checkout__form">
+                    <form class="m-form">
+                        <div class="mb-4 d-flex align-items-center">
+                            <div class="m-form__title flex-grow-1">
+                                運送
+                            </div>
+                            <ul class="e-process d-flex justify-content-between  flex-grow-1">
+                                <li class="e-process-icon check">
+                                    <i class="circle">
+                                    </i>
+                                </li>
+                                <li class="e-process-icon uncheck">
+                                </li>
+                                <li class="e-process-icon uncheck">
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                    <button class="e-button e-button-text mt-1">
+                        <div class="m-form__wrapper">
+                            <div class="d-flex flex-wrap pb-3">
+                                <div class="m-form__group col">
+                                    <label for="firstName">姓氏</label>
+                                    <input class="m-form__text" id="firstName" type="text" placeholder="王">
+                                </div>
+                                <div class="m-form__group col">
+                                    <label for="lastName">名字</label>
+                                    <input class="m-form__text" id="lastName" type="text" placeholder="小明">
+                                </div>
+                            </div>
+                            <div class="m-form__group pb-3">
+                                <label for="phone">電話</label>
+                                <input class="m-form__text mw-100" id="phone" type="text" placeholder="0912-345-678">
+                            </div>
+                            <div class="m-form__group">
+                                <label for="adderss">地址</label>
+                                <div class="d-flex flex-wrap pb-2">
+                                    <div class="m-form__group col">
+                                        <select class="m-form__text" id="firstName" type="text" placeholder="高雄市">
+                                            <option value="">高雄市</option>
+                                            <option value="">台北市</option>
+                                        </select>
+                                    </div>
+                                    <div class="m-form__group col">
+                                        <select class="m-form__text" id="area" type="text" placeholder="新興區">
+                                            <option value="">左營區</option>
+                                            <option value="">楠梓區</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <input class="m-form__text mw-100" id="adderss" type="text" placeholder="幸福路 520 號">
+                            </div>
+                        </div>
+                    </form>
+                    <button class="e-button e-button-text">
                         登入帳號
                     </button>
                 </div>
-                <div class="p-social bg-lighten">
-                    <div class="p-subtitle text-center mb-4">—— 連結社群帳號 ——</div>
-                    <ul class="p-social__list d-flex flex-wrap">
-                        <li class="p-social__item col-md-12 col-4 my-2">
-                            <a href="#">
-                                <img src="assets/img/ic-facebook-logotype.svg" alt="facebook">
-                            </a>
-                        </li>
-                        <li class="p-social__item col-md-12 col-4 my-2">
-                            <a href="#">
-                                <img src="assets/img/ic-google.svg" alt="google">
-                            </a>
-                        </li>
-                        <li class="p-social__item col-md-12 col-4 my-2">
-                            <a href="#">
-                                <img src="assets/img/ic-yahoo.svg" alt="yahoo">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+
             </div>
         </div>
-
-
-    </div>
     </div>
 
 

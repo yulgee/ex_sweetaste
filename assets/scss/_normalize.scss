@@ -123,6 +123,11 @@ pre {
 a {
   background-color: transparent;
   text-decoration: none;
+
+  color: inherit;
+
+
+
 }
 
 /**
@@ -417,4 +422,14 @@ template {
 
 [hidden] {
   display: none;
+}
+
+
+/**
+*list-style-clear
+*/
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0 !important;
 }

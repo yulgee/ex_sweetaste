@@ -17,6 +17,10 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
+//font size
+$font-sm: 1.25rem;
+$font-md: 1.5rem;
+$font-lg: 2rem;
 
 // Break point
 $xs: 0;
@@ -24,3 +28,44 @@ $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
+
+
+// background color
+.bg-lighten {
+    background-color: $primary-lighten;
+}
+
+.bg-darken {
+    background-color: $primary-darken;
+}
+
+// font color
+.text-lighten {
+    color: $primary-lighten;
+}
+
+.text-darkem {
+    color: $primary-darken;
+}
+
+$border-width: 1px !default;
+$border-color: $gray-300 !default;
+$text-muted: $gray-600 !default;
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-cell-padding: .75rem !default;
+$table-cell-padding-sm: .3rem !default;
+
+$table-color: $white !default;
+$table-bg: null !default;
+$table-accent-bg: rgba($black, .05) !default;
+$table-hover-color: $table-color !default;
+$table-hover-bg: rgba($black, .075) !default;
+$table-active-bg: $table-hover-bg !default;
+
+$table-border-width: $border-width !default;
+$table-border-color: $border-color !default;
+
+// no hover 
