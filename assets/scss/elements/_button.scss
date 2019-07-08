@@ -1,20 +1,20 @@
 .e {
-    &-button {
-        display: inline-block;
-        border: none;
-        background-color: $secondary;
-        color: $primary-darken;
-        @include transition;
+  &-button {
+    display: inline-block;
+    border: none;
+    background-color: $secondary;
+    color: $primary-darken;
+    @include transition;
 
-        @include hover-focus {
-            background-color: darken($secondary, 20%);
-        }
-
-        &-text {
-            width: 100%;
-            font-size: 1.5rem;
-            height: auto;
-            padding: 1rem;
-        }
+    @include hover-focus {
+      background-color: darken($secondary, 20%);
     }
+
+    &-text {
+      width: 100%;
+      font-size: 1.5rem;
+      height: auto;
+      padding: 1rem;
+    }
+  }
 }

@@ -14,23 +14,6 @@
 
     thead th {
       vertical-align: bottom;
-      border-bottom: (2 * $table-border-width) solid $table-border-color;
-    }
-
-    tbody+tbody {
-      border-top: (2 * $table-border-width) solid $table-border-color;
-    }
-  }
-
-  //
-  // Condensed table w/ half padding
-  //
-
-  &-table-sm {
-
-    th,
-    td {
-      padding: .3rem;
     }
   }
 }

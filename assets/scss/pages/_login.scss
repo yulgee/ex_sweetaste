@@ -1,71 +1,71 @@
 .p {
-    &-title {
-        padding-top: 1.5rem;
-        font-size: $font-lg;
-        color: $primary-lighten;
+  &-title {
+    padding-top: 1.5rem;
+    font-size: $font-lg;
+    color: $primary-lighten;
+  }
+
+  &-subtitle {
+    padding-top: 1.5rem;
+    font-size: $font-md;
+    color: $primary;
+    font-weight: 300;
+  }
+
+  &-login {
+    position: relative;
+    width: 24rem;
+    background-color: $primary-darken;
+
+    @include rwd($md) {
+      width: 100%;
     }
 
-    &-subtitle {
-        padding-top: 1.5rem;
-        font-size: $font-md;
-        color: $primary;
-        font-weight: 300;
+    &__group {
+      padding: 0 1.5rem;
     }
 
-    &-login {
-        position: relative;
-        width: 390px;
-        background-color: $primary-darken;
-
-        @include rwd($md) {
-            width: 100%;
-        }
-
-        &__group {
-            padding: 0 1.5rem;
-        }
-
-        &__title {
-            padding-top: 1.5rem;
-            font-size: 2rem;
-            color: $primary-lighten;
-        }
-
-        &__submit {
-            width: 100%;
-            font-size: $font-md;
-            height: auto;
-            padding: 1rem;
-        }
+    &__title {
+      padding-top: 1.5rem;
+      font-size: $font-lg;
+      color: $primary-lighten;
     }
 
-    &-social {
-        position: relative;
-        width: 390px;
-        margin: 1rem 0;
+    &__submit {
+      width: 100%;
+      font-size: $font-md;
+      height: auto;
+      padding: 1rem;
+    }
+  }
 
-        @include rwd($md) {
-            width: 100%;
-            margin: 0;
-        }
+  &-social {
+    position: relative;
+    width: 24rem;
+    margin: 1rem 0;
+    background-color: $primary-lighten;
 
-        &__list {
-            padding: 0 1.5rem;
-        }
-
-        &__item {
-            background-color: $white;
-            height: 3.5rem;
-            padding: 1rem;
-
-            @include rwd($md) {
-                border: 0.8px solid $primary-lighten;
-            }
-
-            img {
-                max-height: 100%;
-            }
-        }
+    @include rwd($md) {
+      width: 100%;
+      margin: 0;
     }
 
+    &__list {
+      padding: 0 1.5rem;
+    }
+
+    &__item {
+      background-color: $white;
+      height: 3.5rem;
+      padding: 1rem;
+
+      @include rwd($md) {
+        border: $border-width solid $primary-lighten;
+      }
+
+      img {
+        max-height: 100%;
+      }
+    }
+  }
 }

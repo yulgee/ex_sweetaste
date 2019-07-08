@@ -1,9 +1,8 @@
 // Color system
-$primary : #8DA291;
-$primary-lighten : #EAF0ED;
-$primary-darken : #3F5D45;
-$secondary : #FFE180;
-
+$primary: #8da291;
+$primary-lighten: #eaf0ed;
+$primary-darken: #3f5d45;
+$secondary: #ffe180;
 
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
@@ -29,43 +28,13 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 
-
-// background color
-.bg-lighten {
-    background-color: $primary-lighten;
-}
-
-.bg-darken {
-    background-color: $primary-darken;
-}
-
-// font color
-.text-lighten {
-    color: $primary-lighten;
-}
-
-.text-darkem {
-    color: $primary-darken;
-}
-
-$border-width: 1px !default;
+$border-width: 0.8px !default;
 $border-color: $gray-300 !default;
 $text-muted: $gray-600 !default;
 // Tables
-//
-// Customizes the `.table` component with basic values, each used across all table variations.
-
-$table-cell-padding: .75rem !default;
-$table-cell-padding-sm: .3rem !default;
 
 $table-color: $white !default;
 $table-bg: null !default;
-$table-accent-bg: rgba($black, .05) !default;
-$table-hover-color: $table-color !default;
-$table-hover-bg: rgba($black, .075) !default;
-$table-active-bg: $table-hover-bg !default;
 
 $table-border-width: $border-width !default;
 $table-border-color: $border-color !default;
-
-// no hover 
